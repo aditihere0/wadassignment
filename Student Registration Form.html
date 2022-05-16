@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/assignment-1B/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <title>Student Registration Form</title>
+  <link rel="stylesheet" href="./Student Registration Form_files/bootstrap.min.css"><link rel="stylesheet" href="./Student Registration Form_files/bootstrap-icons.css"><link rel="stylesheet" href="./Student Registration Form_files/style.css"></head>
+
+  <body>
+    <main class="mt-5 pt-3">
+      <div class="container">
+        <div class="container-fluid px-4">
+          <div class="row g-3 my-2">
+            <div class="rounded">
+              <div class="h1 my-4 text-center border">SCHOLARSHIP REGISTRATION FORM</div>
+              <form id="studentForm">
+                <div class="border p-3">
+                  <div class="row">
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>First Name</label>
+                      <input type="text" id="firstName" class="form-control" required="">
+                    </div>
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Last Name</label>
+                      <input type="text" id="lastName" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Birthday</label>
+                      <input type="date" id="dob" class="form-control" required="">
+                    </div>
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Gender</label>
+                      <div class="d-flex align-items-center mt-2">
+                        <label class="option">
+                          <input type="radio" name="gender" value="male">
+                          Male <span class="checkmark"></span>
+                        </label>
+                        <label class="option ms-4">
+                          <input type="radio" name="gender" value="female">
+                          Female <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Email</label>
+                      <input type="email" id="email" class="form-control" required="">
+                    </div>
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Phone Number</label>
+                      <input type="tel" id="contactNo" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="my-md-3 my-3">
+                    <label>Branch</label>
+                    <select id="sub" required="">
+                      <option value="" selected="" hidden="">Choose Option</option>
+                      <option value="Maths">IT</option>
+                      <option value="Science">CSE</option>
+                      <option value="Social">Mechanical</option>
+                      <option value="Hindi">Civil</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Roll No</label>
+                      <input type="text" id="rollno" class="form-control" required="">
+                    </div>
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Registration Date</label>
+                      <input type="date" id="registrationDate" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Parent Name</label>
+                      <input type="text" id="parentName" class="form-control" required="">
+                    </div>
+                    <div class="col-md-6 mt-md-3 mt-3">
+                      <label>Parent Mobile No</label>
+                      <input type="tel" id="parentMobileNo" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="d-grid mt-4">
+                    <button class="btn btn-primary btn-lg" id="btnAddStudent" type="button">
+                      Add Student
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./Student Registration Form_files/bootstrap.bundle.min.js.download"></script>
+    <script src="./Student Registration Form_files/jquery-3.5.1.js.download"></script>
+    <script src="./Student Registration Form_files/myscript.js.download"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
